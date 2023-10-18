@@ -30,6 +30,7 @@ nav a {
 #name {
   font-size: 24px;
   margin-left: 20px;
+  text-align: center;
 }
 
 #image {
@@ -39,32 +40,40 @@ nav a {
 
 #container {
   
-  max-width: 1200px;
+  width: 1100px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
+  padding: 1px;
+  background-color: #333;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
+  box-shadow: #333;
+  box-shadow: 10px 10px 5px gray;
 }
+
+
 
 #image{
   position: relative;
-  left: 600px;
+  left: 520px;
   top: -300px;
   margin-bottom: -200px;
   margin-top: -80px;
+  width: 4000px;
 
 }
 
+
+
 p{
-  width: 50%;
+  width: 53%;
   text-indent: 35px;
   font-size: 20px;
   font-style: italic;
+  color: white;
 }
 
 #content{
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 200px;
 }
 
@@ -74,4 +83,14 @@ p{
 
 h1{
   margin-left: 65px;
+  color: white;
+  font-size: 30pxS;
 }
+
+.pats{
+  text-align: center;
+  font-size: 30px;
+  margin-left: 200px;
+}
+
+/*this is the finall output*/
