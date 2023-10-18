@@ -90,7 +90,7 @@ h1{
 .pats{
   text-align: center;
   font-size: 30px;
-  margin-left: 200px;
+  margin-left: 105px;
 }
 
 .here{
@@ -108,4 +108,18 @@ h1{
   background-color: yellow;
   color: black;
 }
-/*this is the final output na talaga hehe*/
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+  margin: auto;
+  width: 180px;
+  display: block;
+
+}
+
+
+/*this is the final super output na talaga hehe*/
