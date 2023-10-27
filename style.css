@@ -1,125 +1,76 @@
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+*{
+    box-sizing: border-box;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.header{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    opacity: 100px;
+    color: white;
+    padding: 32px;
+    border-bottom: 10px solid wheat;
 }
 
-nav {
-  display: flex;
+h1, h2{
+    margin-left: 100px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
+h2{
+    text-transform: none;
+    font-style: italic;
 }
 
-#name {
-  font-size: 24px;
-  margin-left: 20px;
-  text-align: center;
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat; /*ginagamit para magfull background yung mga images*/
+    background-size: cover; /*ginagamit para magfull background yung mga images*/
+    background-attachment: fixed; /*ginagamit para magfull background yung mga images*/
+    font-family: sans-serif;
+    margin: 0;
 }
 
-#image {
-  max-width: 100%;
-  height: auto;
+.gallery {
+    display: flex; /*para maalign ang mga items sa isang line
+    or left to the right or right to the left*/
+
+    flex-direction: row;
+
+    flex-wrap: wrap; /*force na mamove ang mga items or mabago
+    into multiple lines*/
+    /*nowrap kapag wala mababago*/
+    /*reverse wrap naman kung babaliktarin*/
+
+    justify-content: center; /*imomove lang ang mga items sa gitna
+    mula sa leftside*/
+
+    align-items: center;
+    
+    gap: 16px; /*spaces sa mga picture*/
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
 }
 
-#container {
-  
-  width: 1100px;
-  margin: 40px auto;
-  padding: 1px;
-  background-color: #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-  box-shadow: #333;
-  box-shadow: 10px 10px 5px gray;
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: contain; /*ginagamit para magfit ang mga picture sa isang box
+    lalo na kung magkakaiba sila ng aspect ratio*/
+    border-radius: 50px;
+    transition: transform .5s; /*effects sa paghohover at kung gaano katagal*/
 }
 
-
-
-#image{
-  position: relative;
-  left: 520px;
-  top: -300px;
-  margin-bottom: -200px;
-  margin-top: -80px;
-  width: 4000px;
-
+.gallery img:hover{
+    transform: scale(1.5); /*kung gaano kalaki magtatransform*/
+    cursor: pointer;
 }
 
-
-
-p{
-  width: 53%;
-  text-indent: 35px;
-  font-size: 20px;
-  font-style: italic;
-  color: white;
+.logo{
+    width: 120px;
+    position: absolute;
+    margin-left: -350px;
 }
-
-#content{
-  margin-left: 70px;
-  margin-top: 200px;
-}
-
-#name{
-  text-align: center;
-}
-
-h1{
-  margin-left: 65px;
-  color: white;
-  font-size: 30pxS;
-}
-
-.pats{
-  text-align: center;
-  font-size: 30px;
-  margin-left: 105px;
-}
-
-.here{
-  margin-top: 50px;
-  background-color: lightgray;
-  color: black;
-  width: 25%;
-  text-align: center;
-  padding: 10px;
-  margin-left: 110px;
-  border-radius: 20px;
-}
-
-.here:hover {
-  background-color: yellow;
-  color: black;
-}
-
-ul{
-  display: flex;
-}
-
-li{
-  list-style: none;
-  margin: auto;
-  width: 180px;
-  display: block;
-
-}
-
-
-/*this is the final super output na talaga hehe*/
