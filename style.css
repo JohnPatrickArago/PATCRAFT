@@ -5,11 +5,9 @@
 .header{
     text-transform: uppercase;
     text-align: center;
-    background-color: black;
     opacity: 100px;
     color: white;
     padding: 32px;
-    border-bottom: 10px solid wheat;
 }
 
 h1, h2{
@@ -62,6 +60,7 @@ body{
     lalo na kung magkakaiba sila ng aspect ratio*/
     border-radius: 50px;
     transition: transform .5s; /*effects sa paghohover at kung gaano katagal*/
+    box-shadow: 5px 10px 8px 10px white;
 }
 
 .gallery img:hover{
